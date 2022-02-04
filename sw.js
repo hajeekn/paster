@@ -40,10 +40,10 @@ const handle = async (req) => {
         return urlObj.searchParams.get(key);
     }
     const domain = urlObj.hostname;
-    if (domain !== 'tmlinkdb-1g2nhdbkd538e00c-1258619363.tcloudbaseapp.com') return fetch(req);
+    if (domain !== 'service-av203wsv-1258619363.sh.apigw.tencentcs.com') return fetch(req);
     if (!!search('link')) {
         return  Response.redirect(dec(search('link'), parseInt(search('xor')), parseInt(search('hex'))))
     } else {
-        return new Response(await (await fetch('https://tmlinkdb-1g2nhdbkd538e00c-1258619363.tcloudbaseapp.com/info.html')).text(), { headers: { 'Content-Type': 'text/html;charset=utf-8' } })
+        return new Response(await (await fetch('https://service-av203wsv-1258619363.sh.apigw.tencentcs.com/info.html')).text(), { headers: { 'Content-Type': 'text/html;charset=utf-8' } })
     }
 }
