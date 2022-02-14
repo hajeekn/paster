@@ -42,6 +42,6 @@ const handle = async (req) => {
     if (!!search('link')) {
         return  Response.redirect(dec(search('link'), parseInt(search('xor')), parseInt(search('hex'))))
     } else {
-        return new Response(await (await fetch('https://service-av203wsv-1258619363.sh.apigw.tencentcs.com/info.html')).text(), { headers: { 'Content-Type': 'text/html;charset=utf-8' } })
+        return new Response(await (await fetch('https://port.hesiy.cn/info.html')).text(), { headers: { 'Content-Type': 'text/html;charset=utf-8' } })
     }
 }
