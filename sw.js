@@ -39,8 +39,6 @@ const handle = async (req) => {
     const search = (key) => {
         return urlObj.searchParams.get(key);
     }
-    const domain = urlObj.hostname;
-    if (domain !== 'service-av203wsv-1258619363.sh.apigw.tencentcs.com') return fetch(req);
     if (!!search('link')) {
         return  Response.redirect(dec(search('link'), parseInt(search('xor')), parseInt(search('hex'))))
     } else {
